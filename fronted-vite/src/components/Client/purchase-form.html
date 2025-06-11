@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario de Compra</title>
+  <!-- Bootstrap local -->
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+
+  
+</head>
+<body class="container py-5">
+
+  <h2 class="text-center mb-4">Compra de Pasajes</h2>
+
+  <form id="ticketForm" class="border rounded p-4 bg-light shadow-sm">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label for="origin" class="form-label">Origen</label>
+        <input type="text" class="form-control" id="origin" required />
+      </div>
+
+      <div class="col-md-6">
+        <label for="destination" class="form-label">Destino</label>
+        <input type="text" class="form-control" id="destination" required />
+      </div>
+
+      <div class="col-md-6">
+        <label for="date" class="form-label">Fecha</label>
+        <input type="date" class="form-control" id="date" required />
+      </div>
+
+      <div class="col-md-6">
+        <label for="numPasajeros" class="form-label">Cantidad de pasajeros</label>
+        <input type="number" id="numPasajeros" class="form-control" value="1" min="1" max="10" required />
+      </div>
+
+      <div class="col-md-3">
+       
+      </div>
+    </div>
+
+    <hr class="my-4" />
+    <div id="pasajerosContainer" class="row g-3"></div>
+
+    <div class="col-12 text-center mt-4">
+      <button type="submit" class="btn btn-success px-5">Confirmar Compra</button>
+    </div>
+  </form>
+
+  <div id="responseMsg" class="mt-4 text-center"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="../../scripts/Client/purchase-form.js"></script>
+  <script src="../../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+# Ignorar archivos sensibles
+.env
+.env.*.local
+
+# Node.js
+**/node_modules/
+**/logs/
+**/*.log
+
+# Output de producción
+**/dist/
+**/build/
+
+# Editor config
+.vscode/
+.idea/
+*.swp
+
+#  Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Vite cache
+**/.vite/
+
+# Apollo
+**/__generated__/
+
+#  Docker local artifacts 
+**/*.tar
+docker-compose.override.yml
+
+# Mongo dumps 
+**/dump/

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Compra de Pasajes</title>
+
+  
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- Rutas absolutas desde /public y /src -->
+  <!--<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" /> -->
+  
+
+</head>
+
+
+<body class="container py-5">
+
+  <h1 class="text-center mb-5">Sistema de Venta de Pasajes Interprovinciales</h1>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="list-group shadow">
+        <a href="src/components/Client/search-form.html" class="list-group-item list-group-item-action">
+          Buscar Salidas (Cliente)
+        </a>
+        <a href="src/components/Admin/payment-list.html" class="list-group-item list-group-item-action">
+          Ver Pagos de Pasajes (Admin)
+        </a>
+        <a href="src/components/Admin/ticket-list.html" class="list-group-item list-group-item-action">
+          Ver Pasajes Emitidos (Admin)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer class="text-center mt-5 text-muted">
+    Sistema conectado vía GraphQL usando Apollo Client
+  </footer>
+
+  <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
