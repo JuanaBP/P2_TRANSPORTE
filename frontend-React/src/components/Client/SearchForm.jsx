@@ -1,7 +1,7 @@
 // src/components/Client/SearchForm.jsx
 import { useState } from 'react';
 import { useQuery, useLazyQuery } from '@apollo/client';
-import { SEARCH_TICKETS, PARSE_NLP } from '../../../graphql/queries.js';
+import { SEARCH_TICKETS, PARSE_NLP } from '../../graphql/queries.js';
 
 export default function SearchForm({ onResults }) {
   const [formData, setFormData] = useState({
