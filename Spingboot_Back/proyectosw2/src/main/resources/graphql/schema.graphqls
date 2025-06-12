@@ -1,0 +1,50 @@
+type Query {
+    login(input:UsuarioInput): Usuario
+    obtenerUsuarios: [Usuario]
+    obtenerUsuario (id: String): Usuario
+    obtenerVehiculos: [Vehiculo]
+}
+
+
+type Mutation {
+    createUsuario(input: UsuarioInput!): Usuario
+    crearVehiculo(input: VehiculoInput): Vehiculo
+}
+
+input UsuarioInput {
+    nombre: String
+    email: String!
+    password: String!
+}
+
+type Usuario{
+    id:String
+    nombre: String
+    email: String
+    password: String
+    token: String
+    rol_id: Int
+}
+
+input VehiculoInput {
+    marca: String
+    modelo: String
+    anio: Int
+    color: String
+    placa: String
+    tipo: String
+    estado: String
+    usuario_id: String
+}
+
+type Vehiculo {
+    id: String
+    marca: String
+    modelo: String
+    anio: Int
+    color: String
+    placa: String
+    tipo: String
+    estado: String
+    usuario_id: String
+}
