@@ -7,8 +7,9 @@ dotenv.config();
 
 const gateway = new ApolloGateway({
   serviceList: [
-    { name: 'ticket', url: process.env.TICKET_SERVICE_URL },
-    { name: 'payment', url: process.env.PAYMENT_SERVICE_URL }
+ 
+    { name: 'ventas_rutas', url: process.env.VENTAS_RUTAS_URL },
+    { name: 'usuarios', url: process.env.SPRINGBOOT_PROXY_URL }
   ]
 });
 

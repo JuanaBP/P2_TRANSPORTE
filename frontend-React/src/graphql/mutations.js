@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client/core';
+import { gql } from '@apollo/client';
 
 // Crear un ticket (por pasajero)
 export const CREATE_TICKET = gql`
